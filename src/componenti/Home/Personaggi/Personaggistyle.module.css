@@ -1,0 +1,116 @@
+.personaggi_section {
+    width: 100vw;
+    height: auto;
+    background-color: #000;
+    margin-top: -40px;
+    padding-top: 5%;
+}
+
+#show_all_text {
+    color: 	#00bfff;
+    font-family: sans-serif;
+    margin-left: 5%;
+    font-weight: lighter;
+    cursor: pointer;
+}
+
+.personaggi_card_container {
+    width: 90%;
+    height: auto;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    flex-wrap: wrap;
+    align-items: start;
+    overflow: hidden;
+}
+
+.personaggi_title {
+    /* color: rgb(247, 45, 9); */
+    color: #ff1493;
+    font-family: 'Lato', sans-serif;
+    /* font-weight: lighter; */
+    font-size: 3rem;
+    margin-left: 5%;
+}
+
+.personaggiCard {
+    width: 10%;
+    height: 200px;
+    margin: 20px 12px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: all ease 300ms;
+    transform-origin: center center;
+}
+
+.personaggiCard:hover {
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+.personaggiCard > img{
+    width: 90%;
+    height: 80%;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.personaggiCard > h3 {
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-size: 1rem;
+}
+
+.personaggiCard:hover > img {
+    /* box-shadow: 0px 0px 10px 2px #369457; */
+    box-shadow: 0px 0px 10px 2px #00bfff;
+}
+
+@media (max-width: 1024px) {
+
+    .personaggi_card_container {
+        width: 100%;
+        padding-left: 5%;
+    }
+
+    .personaggiCard {
+        width: 22%;
+        height: 300px;
+        /* display: none; */
+    }
+}
+
+@media (max-width: 800px) {
+
+    .personaggi_card_container {
+        width: 95%;
+    }
+
+    .personaggiCard {
+        width: 20%;
+        height: 220px;
+        /* display: none; */
+    }
+}
+
+@media (max-width: 500px) {
+    .personaggi_card_container {
+        width: 100%;
+    }
+
+    .personaggiCard {
+        width: 47%;
+        height: 200px;
+        margin: 20px 5px;
+        /* height: 440px; */
+    }
+}

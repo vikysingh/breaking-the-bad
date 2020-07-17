@@ -1,0 +1,250 @@
+.episodi_section {
+    width: 100vw;
+    height: auto;
+    padding-top: 5%;
+    background-color: #000;
+}
+
+.episodi_header_container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.episodi_title {
+    color: #ff1493;
+    font-family: 'Lato', sans-serif;
+    /* font-weight: lighter; */
+    font-size: 3rem;
+    margin-left: 5%;
+}
+
+.episodi_header_container > span {
+    width: 40%;
+    margin-left: 5%;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    
+}
+
+.episodi_header_container > span > button {
+    height: auto;
+    width: auto;
+    padding: 14px 25px;
+    border-radius: 0;
+    margin: 0 15px;
+    opacity: 1;
+    background: #000;
+    font-size: 0.9rem;
+    border: unset;
+    cursor: pointer;
+    color: #fff;
+}
+
+
+.episodio_stagione_btn_attivo {
+    background-color: dodgerblue !important;
+    color: #fff !important;
+}
+
+#show_all_text_episode {
+    color: 	#00bfff;
+    font-family: sans-serif;
+    margin-left: 5%;
+    font-weight: lighter;
+    cursor: pointer;
+}
+
+.episode_container {
+    
+    width: 95%;
+    height: auto;
+    overflow: hidden;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-left: 3%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    flex-wrap: wrap;
+}
+
+.episode_card {
+    width: 27%;
+    height: 170px;
+    /* max-height: 230px; */
+
+    padding-left: 15px;
+    padding-bottom: 20px;
+    margin: 10px 20px;
+
+    background-color: #fff;
+    box-shadow: 0px 0px 10px 2px #eee;
+
+    display: grid;
+    grid-template-rows: 70% 30%;
+    overflow: hidden;
+
+    opacity: 0.8;
+    transition: all ease 200ms;
+}
+
+.episode_card:hover {
+    opacity: 1;
+}
+
+.episode_card_upper_row {
+    grid-row: 1 / 2;
+    display: grid;
+    grid-template-columns: 65% 35%;
+}
+
+.episode_card_bottom_row {
+    grid-row: 2 / -1;
+    height: 100%;
+    width: 100%;
+
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.episode_card_bottom_row a {
+    font-size: 0.7rem;
+    margin: 8px 4px;
+    min-width: 20%;
+    color: dodgerblue;
+    font-family: sans-serif;
+}
+
+.episode_card_left_col {
+    grid-column: 1 / 2;
+}
+
+.episode_card_right_col {
+    grid-column: 2 / -1;
+
+    padding-right: 10%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.episode_card h3 {
+    font-weight: bolder;
+    font-family: sans-serif;
+    font-size: 1.3rem;
+}
+
+.episode_card_right_col > h3 {
+    font-weight: lighter;
+    font-family: sans-serif;
+    font-size: 1rem;
+    position: relative;
+    top: 8px;
+}
+
+.episode_card h4 {
+    font-weight: lighter;
+    font-family: sans-serif;
+    opacity: 0.6;
+    margin-top: -10px;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 1024px) {
+    .episodi_section {
+        padding-top: 12%;
+        padding-bottom: 5%;
+    }
+
+    .episodi_header_container > span {
+        width: 50%;
+    }
+
+    .episode_container {
+        padding-left: 2%;
+        width: 98%;
+    }
+
+    .episode_card {
+        width: 29%;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .episode_card_left_col h3 {
+        width: 90%;
+    }
+}
+
+@media (max-width: 800px) {
+
+    .episodi_header_container > span {
+        width: 50%;
+    }
+
+    .episodi_header_container > span > button {
+        padding: 15px 10px;
+        margin: 0 5px;
+        transition: 0ms;
+    }
+
+    .episode_card {
+        width: 42%;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .episodi_section {
+        position: relative;
+        top: 10vh;
+    }
+    .episodi_header_container {
+        overflow: hidden;
+        flex-wrap: wrap;
+        padding-bottom: 4vh;
+        padding-left: 5%;
+    }
+
+    .episodi_header_container h1 {
+        font-size: 1.5rem;
+        margin-right: 48%;
+        margin-left: 0%;
+    }
+
+    .episodi_header_container > span {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .episodi_header_container > span > button {
+        padding: 15px 10px;
+        margin: 0 5px;
+        transition: 0ms;
+    }
+
+    .episodi_header_container > span > button:nth-child(2) {
+        margin-left: 0%;
+    }
+
+    .episode_card {
+        width: 90%;
+    }
+}
